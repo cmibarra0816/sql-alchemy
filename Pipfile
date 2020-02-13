@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+pandas = "*"
+sqlalchemy = "*"
+pymysql = "*"
+jupyter = "*"
+ipykernel = "*"
+matplotlib = "*"
+numpy = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+nb-flask = "*"
+blackcellmagic = "*"
+
+[requires]
+python_version = "3.8"
