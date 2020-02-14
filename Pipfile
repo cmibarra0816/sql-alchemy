@@ -4,6 +4,8 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+black = "*"
+v = {editable = true,version = "*"}
 
 [packages]
 pandas = "*"
@@ -15,8 +17,12 @@ matplotlib = "*"
 numpy = "*"
 flask = "*"
 flask-sqlalchemy = "*"
-nb-flask = "*"
-blackcellmagic = "*"
+jsonify = "*"
+request = "*"
+nb-black = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
