@@ -4,6 +4,7 @@ from sqlalchemy.types import Date
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
+import time
 import datetime as dt
 from flask import Flask, jsonify, request
 
@@ -19,7 +20,7 @@ Base=automap_base()
 
 Base.prepare(engine, reflect=True)
 
-Obtain SQL, save references to each table
+#Obtain SQL, save references to each table
 
 Measurement=Base.classes.measurement
 Station=Base.classes.station
@@ -32,7 +33,7 @@ session=Session(engine)
 
 app=Flask(__name__)
 
-Flask routes
+#Flask routes
 @app.route("/")
 def welcome():
     """List all available api routes."""
